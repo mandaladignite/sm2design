@@ -364,7 +364,7 @@
         /* Services Section */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -783,7 +783,6 @@
                 font-size: 2.4rem;
             }
 
-            .services-grid,
             .portfolio-grid,
             .features-grid,
             .testimonials {
@@ -891,6 +890,39 @@
             
             .cta h2 {
                 font-size: 2rem;
+            }
+
+            .about-stats,
+            .services-grid,
+            .portfolio-grid,
+            .features-grid,
+            .testimonials {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card,
+            .feature-item,
+            .testimonial,
+            .stat-item {
+                padding: 1.6rem 1.25rem;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            }
+
+            .portfolio-item {
+                height: 320px;
+                border-radius: 16px;
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+            }
+
+            .service-card h3,
+            .feature-item h3 {
+                font-size: 1.25rem;
+            }
+
+            .service-icon,
+            .feature-icon {
+                font-size: 2.1rem;
+                margin-bottom: 1.1rem;
             }
         }
     </style>
